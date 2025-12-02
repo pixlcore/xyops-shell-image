@@ -26,7 +26,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	libwebp-dev \
 	libheif1 \
 	libjxl-tools \
-	moreutils
+	moreutils \
+	jq
 
 # install docker cli
 RUN . /etc/os-release; \
