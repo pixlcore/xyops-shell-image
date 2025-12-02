@@ -4,19 +4,21 @@ This repository generates a Docker base image for the [xyOps](https://xyops.io) 
 
 You can use this image directly in your xyOps jobs, as it comes preinstalled with a variety of popular software, but more likely you will want to create your own Docker image based on this one, and pull in your own dependencies.  Instructions are below.
 
-# Preinstalled
+## Preinstalled
 
 The image is based on `node:22-bookworm` (Debian 12) and contains the following preinstalled software:
 
 - Node.js v22 + NPM + NPX
 - Python v3 + UV + UVX
-- Docker CLI
-- ffmpeg
-- ImageMagick +WebP +AVIF +HEIC +JPEG-XL
+- Go v1.19
+- Perl v5
+- Docker CLI v29
+- ffmpeg v5.1
+- ImageMagick v6.9 +WebP +AVIF +HEIC +JPEG-XL
 - [xyRun](https://github.com/pixlcore/xyrun)
-- Also: zip, git, ssh, curl, wget, vim, less, sudo, jq, moreutils
+- Also: zip, git, ssh, curl, wget, vim, less, sudo, jq, moreutils, net-tools, dnsutils, etc.
 
-# Custom Image
+## Custom Image
 
 To make your own custom image based on this one, set your Dockerfile `FROM` line to:
 
@@ -47,6 +49,6 @@ CMD ["xyrun"]
 
 xyRun will then launch your custom script specified in your xyOps event, monitor all system resources during job runs, and handle uploading and downloading files for your jobs.
 
-# License
+## License
 
 MIT
