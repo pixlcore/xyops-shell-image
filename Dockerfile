@@ -1,5 +1,9 @@
 FROM node:22-bookworm
 
+LABEL org.opencontainers.image.source="https://github.com/pixlcore/xyops-shell-image"
+LABEL org.opencontainers.image.description="Base image for the xyOps Docker Event Plugin."
+LABEL org.opencontainers.image.licenses="MIT"
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
