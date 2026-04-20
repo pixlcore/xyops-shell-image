@@ -15,6 +15,7 @@ The image is based on `node:22-bookworm` (Debian 12) and contains the following 
 - Docker CLI v29
 - ffmpeg v5.1
 - ImageMagick v6.9 +WebP +AVIF +HEIC +JPEG-XL
+- rsync v3.2.7
 - [xyRun](https://github.com/pixlcore/xyrun)
 - Also: zip, git, ssh, curl, wget, vim, less, sudo, jq, moreutils, net-tools, dnsutils, etc.
 
