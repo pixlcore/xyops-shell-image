@@ -6,9 +6,9 @@ You can use this image directly in your xyOps jobs, as it comes preinstalled wit
 
 ## Preinstalled
 
-The image is based on `node:22-bookworm` (Debian 12) and contains the following preinstalled software:
+The image is based on `node:24-bookworm` (Debian 12) and contains the following preinstalled software:
 
-- Node.js v22 + NPM + NPX
+- Node.js v24 + NPM + NPX
 - Python v3 + UV + UVX
 - Go v1.19
 - Perl v5
