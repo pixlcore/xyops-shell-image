@@ -1,4 +1,4 @@
-FROM node:22-bookworm
+FROM node:24-bookworm
 
 LABEL org.opencontainers.image.source="https://github.com/pixlcore/xyops-shell-image"
 LABEL org.opencontainers.image.description="Base image for the xyOps Docker Event Plugin."
